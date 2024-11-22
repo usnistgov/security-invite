@@ -1,0 +1,4 @@
+DB_FILE: ~/si/db/SI-DBF.db
+LOG_FILE: ~/si/logs/LogS.txt
+TABLE_NAME: USERS_Top50
+MAX_FAILED: 5

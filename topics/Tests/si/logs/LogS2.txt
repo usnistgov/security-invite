@@ -1,0 +1,67 @@
+2024-09-21 01:33:05.050425-04:00:
+	Type: <class 'sqlite3.OperationalError'>
+	Error: no such table: USERS_Top50H
+	['Traceback (most recent call last):\n', '  File "/Users/dac4/github/security-invite/topics/Tests/hw4.py", line 185, in get_profile\n    returned_rows_count = -1 # Set the initial value negative, as 0 rows is always possible.\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'sqlite3.OperationalError: no such table: USERS_Top50H\n']2024-09-21 01:33:05.050925-04:00:
+	Type: <class 'sqlite3.OperationalError'>
+	Error: no such table: USERS_Top50H
+	['Traceback (most recent call last):\n', '  File "/Users/dac4/github/security-invite/topics/Tests/hw4.py", line 146, in execute_query\n    """ Makes Log Message as specified\n                   ^^^^^^^^^^^^^^^^^^^^\n', 'sqlite3.OperationalError: no such table: USERS_Top50H\n']2024-09-21 01:33:05.051219-04:00:
+	Type: <class 'sqlite3.OperationalError'>
+	Error: no such table: USERS_Top50H
+	['Traceback (most recent call last):\n', '  File "/Users/dac4/github/security-invite/topics/Tests/hw4.py", line 146, in execute_query\n    """ Makes Log Message as specified\n                   ^^^^^^^^^^^^^^^^^^^^\n', 'sqlite3.OperationalError: no such table: USERS_Top50H\n']2024-09-21 01:34:48.150798-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:38:17.525669-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:39:16.084332-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:42:05.540634-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:43:58.420772-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:47:43.012212-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:49:02.691006-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:50:12.978736-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:50:18.271488-04:00:
+	Type: <class 'sqlite3.OperationalError'>
+	Error: database is locked
+	['Traceback (most recent call last):\n', '  File "/Users/dac4/github/security-invite/topics/Tests/hw4.py", line 197, in execute_query\n    rows = cursor.execute(sql_query, values).fetchall()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'sqlite3.OperationalError: database is locked\n']2024-09-21 01:51:07.354611-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:52:07.521444-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:52:53.265040-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:56:43.617720-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 01:58:48.297251-04:00: 
+	Type: <class 'NameError'>
+	Error: name 'hashlib' is not defined2024-09-21 17:20:41.163006-04:00: 
+	Type: <class 'TypeError'>
+	Error: fromhex() argument must be str, not None2024-09-21 17:23:55.948447-04:00: 
+	Type: <class 'TypeError'>
+	Error: tuple indices must be integers or slices, not str2024-09-21 23:40:19.469559-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-21 23:41:06.986347-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-21 23:42:31.480890-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-21 23:43:30.264637-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'sqlite3.Cursor' object has no attribute 'keys'2024-09-21 23:44:28.984326-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-21 23:46:01.055814-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-21 23:48:08.318726-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-21 23:48:31.653320-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-21 23:48:48.630728-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-22 00:03:16.554340-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-22 00:03:35.694503-04:00: 
+	Type: <class 'AttributeError'>
+	Error: 'list' object has no attribute 'keys'2024-09-22 00:05:38.467951-04:00: 
+	Type: <class 'TypeError'>
+	Error: get_column_for() missing 1 required positional argument: 'cursor'

@@ -1,0 +1,86 @@
+
+
+!!!================================================================================
+!!!=> 2023-10-18T22:18:52-0400 
+	Logged by: __main__	@Level: INFO:
+	In function: [read_settings]	@Line No: 31
+	Successfully read YAML file [../Tests/si/set/settings.yaml] with status:1
+!!!================================================================================
+
+
+!!!================================================================================
+!!!=> 2023-10-18T22:18:52-0400 
+	Logged by: __main__	@Level: ERROR:
+	In function: [read_settings]	@Line No: 23
+	General Exception:
+[Errno 2] No such file or directory: '../Tests/si/set/settings.yamlX'
+
+!!!================================================================================
+Traceback (most recent call last):
+  File "/var/folders/_9/4mm_wdfn2jj8bjd9n7qdlvg0001jrw/T/ipykernel_26959/1637004876.py", line 13, in read_settings
+    with open(settings_file, "r") as stream:
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/IPython/core/interactiveshell.py", line 284, in _modified_open
+    return io_open(file, *args, **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '../Tests/si/set/settings.yamlX'
+
+
+!!!================================================================================
+!!!=> 2023-10-18T22:18:52-0400 
+	Logged by: __main__	@Level: ERROR:
+	In function: [read_settings]	@Line No: 29
+	Failed attempt to read YAML file [../Tests/si/set/settings.yamlX] with status:-10
+!!!================================================================================
+
+
+!!!================================================================================
+!!!=> 2023-10-18T22:18:52-0400 
+	Logged by: __main__	@Level: ERROR:
+	In function: [read_settings]	@Line No: 19
+	yaml.YAMLError:
+while scanning a simple key
+  in "../Tests/si/set/settings-broken.yaml", line 3, column 1
+could not find expected ':'
+  in "../Tests/si/set/settings-broken.yaml", line 4, column 2
+
+!!!================================================================================
+Traceback (most recent call last):
+  File "/var/folders/_9/4mm_wdfn2jj8bjd9n7qdlvg0001jrw/T/ipykernel_26959/1637004876.py", line 14, in read_settings
+    settings_dict = yaml.safe_load(stream)
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/__init__.py", line 162, in safe_load
+    return load(stream, SafeLoader)
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/composer.py", line 64, in compose_node
+    if self.check_event(AliasEvent):
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/parser.py", line 449, in parse_block_mapping_value
+    if not self.check_token(KeyToken, ValueToken, BlockEndToken):
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "/Users/dac4/Library/Python/3.8/lib/python/site-packages/yaml/scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "../Tests/si/set/settings-broken.yaml", line 3, column 1
+could not find expected ':'
+  in "../Tests/si/set/settings-broken.yaml", line 4, column 2
+
+
+!!!================================================================================
+!!!=> 2023-10-18T22:18:52-0400 
+	Logged by: __main__	@Level: ERROR:
+	In function: [read_settings]	@Line No: 29
+	Failed attempt to read YAML file [../Tests/si/set/settings-broken.yaml] with status:-1
+!!!================================================================================

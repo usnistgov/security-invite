@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+DB_FILE: ~/github/security-invite/topics/Tests/si/db/SI_DB.db
+=======
+DB_FILE: /Users/dac4/github/security-invite/topics/Tests/si/db/SI_DB.db
+>>>>>>> 4a7920e0f1fb7059477b66765cfe12c0c90e4538
+TABLE_NAME: Users_Top50
+MAX_FAILED: 5

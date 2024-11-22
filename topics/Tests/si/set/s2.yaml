@@ -1,0 +1,4 @@
+DB_FILE: /Users/dac4/github/security-invite/topics/Tests/si/db/SI-HW4.db
+LOG_FILE: /Users/dac4/github/security-invite/topics/Tests/si/logs/LogS2.txt
+TABLE_NAME: USERS_Top50H
+MAX_FAILED: 5

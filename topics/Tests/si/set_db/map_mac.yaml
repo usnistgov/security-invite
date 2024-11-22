@@ -1,0 +1,3 @@
+USERS_Top50: ./bp_top50_wiki-owasp-sl.txt
+USERS_Top100: ./bp_top100_wiki-owasp-sl.txt
+USERS_Top500: ./bp_top500_owasp22.txt

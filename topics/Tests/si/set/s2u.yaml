@@ -1,0 +1,4 @@
+DB_FILE: ~/si/db/SI-HW4.db
+LOG_FILE: ~/si/logs/LogS2.txt
+TABLE_NAME: USERS_Top50H
+MAX_FAILED: 5

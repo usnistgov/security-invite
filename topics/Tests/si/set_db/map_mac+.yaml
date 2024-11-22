@@ -1,0 +1,5 @@
+# topics/Tests/si/map_mac+.yaml
+#/Users/dac4/github/security-invite/topics/Tests/si/bp_top50_wiki-owasp-sl.txt
+USERS_Top50: /Users/dac4/github/security-invite/topics/Tests/si/bp_top50_wiki-owasp-sl.txt
+USERS_Top100: /Users/dac4/github/security-invite/topics/Tests/si/bp_top100_wiki-owasp-sl.txt
+USERS_Top500: /Users/dac4/github/security-invite/topics/Tests/si/bp_top500_owasp22.txt

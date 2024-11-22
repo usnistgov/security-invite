@@ -1,0 +1,56 @@
+###  Security-Invite 
+###  Dockerized App Setup
+### =================================================================================
+
+### =============== Step 0: Get the Ubuntu as Base OS  and update     ===============
+FROM ubuntu:24.04
+
+### Update/Upgrade the OS
+RUN apt-get update -y
+RUN apt-get upgrade -y
+
+### Do Post-Update Cleanup 
+RUN apt-get autoremove -y
+RUN apt-get autoclean -y
+RUN apt-get clean -y
+
+
+## =============== Step 1: Install Required Packages                ===============
+RUN apt-get update -y
+RUN apt-get install -y python3 python3-pip
+RUN apt-get install -y openssh-server
+RUN mkdir /var/run/sshd
+RUN apt-get install --upgrade python3-pip
+
+# Allow SSH server on port 22
+EXPOSE 22
+CMD ["/usr/sbin/sshd", "-D"]
+
+
+## =============== Step 2: Add non-Root User                         ===============
+## Create a [S]ecurity [I]nvite-[R]unner (shorthanded as sir) 
+RUN useradd -m -d /home/sir/ -s /bin/bash sir && echo 'sir:test' | chpasswd && usermod -aG sudo sir
+
+# Change working directory to non-root user
+WORKDIR /home/sir/
+
+
+## =============== Step 3: Get Required Packages installed via PIP   ===============
+COPY ./0-Docker/si-requirements.txt ./requirements.txt
+RUN pip3 install -r ./requirements.txt --break-system-packages
+
+
+## =============== Step 4: Copy Testing files                        ===============
+ADD ./Tests/si ./si
+COPY ./Tests/hw*.py ./
+# RUN mkdir ./si/logs
+RUN chown -R sir:sir ./
+
+# This is needed because the database creation needs to happen as the sir user
+USER sir
+
+## =============== Step 4.1: Build Default DB                        ===============
+RUN python3 ./si/db_create.py -wd ./si/db -pm ./si/set_db/map_ubu+.yaml -db SI_DB.db
+RUN python3 ./si/db_create.py -wd ./si/db -pm ./si/set_db/map_ubu+.yaml -db SI-HW4.db
+
+USER root

@@ -1,0 +1,11 @@
+database: ./SI_DB.db
+attempts: 
+3404197019234709172340691702349617023461463
+
+MAX_FAILED: 15
+ABRACADABRA: 100 
+TABLE_NAME: sqlite_AUTH_USERS
+ZULU: 2023-10-10 23:23:23-00:04
+DB_NAME: ~/Databases/SecInVITE-DB/MyDb.db
+ABACUS: In this day and age we use computers
+USER_NAME: 123456some_-_user!@#

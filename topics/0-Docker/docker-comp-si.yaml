@@ -1,0 +1,24 @@
+version: '2'
+services:
+  cli:
+
+    # Container Name - SID - [S]ecurity [I]nvity [D]ocker
+    container_name: sid
+    build: 
+      context: .
+      dockerfile: Dockerfile-SI
+
+    # Map the container volumes
+    volumes:
+        - ~/si-home/:/si-home/
+
+    tty: true
+
+    # PATHs and other variables
+    environment:
+      - SI_PATH=/si
+      - CORE_SI_HOME=/si
+
+    working_dir: /map/si
+    command: /bin/bash
+
